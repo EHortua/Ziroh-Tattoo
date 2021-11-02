@@ -2,14 +2,19 @@ import logo from "../assets/img/Ziroh-Tattoo-Logo.png";
 
 function showMenu () {
   const menu_cont = document.querySelector(".menu-cont");
+  const header = document.querySelector("header");
   if (menu_cont.classList.contains("slidein")) {
     document.querySelector(".menu-cont").classList.remove("slidein");
     document.querySelector(".menu-cont").classList.add("slideout");
+    header.classList.remove("header-dark");
   } else if (menu_cont.classList.contains("slideout")) {
     document.querySelector(".menu-cont").classList.remove("slideout");
     document.querySelector(".menu-cont").classList.add("slidein");
+    header.classList.add("header-dark");
   } else {
-    document.querySelector(".menu-cont").classList.add("slideout");
+    document.querySelector(".menu-cont").classList.add("slidein");
+    header.classList.add("header-dark");
+    header.classList.add("header-dark");
   }
   
 }
