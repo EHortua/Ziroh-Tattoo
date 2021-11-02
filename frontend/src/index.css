@@ -1,0 +1,27 @@
+@import url("./assets/header.css");
+@import url("./assets/start.css");
+@import url("./assets/products.css");
+@import url("./assets/portfolio.css");
+@import url("./assets/meeting.css");
+@import url("./assets/admin.css");
+@import url("./assets/contact.css");
+@import url("./assets/footer.css");
+
+@font-face {
+  font-family: "Coco Gothic";
+  src: url("../src/assets/CocoGothic-Light_trial.woff2");
+}
+
+:root{
+  --white:white;
+}
+
+body {
+  margin: 0;
+  font-family: "Coco Gothic";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
